@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45ce0975-c2ed-416a-ac4c-e6cbf775b71b" name="Default Changelist" comment="Created Django project and app">
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_project/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_project/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profiles_project/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="45ce0975-c2ed-416a-ac4c-e6cbf775b71b" name="Default Changelist" comment="Added custom user profile model, manager and migrations">
+      <change beforePath="$PROJECT_DIR$/profiles_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/profiles_api/admin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profiles_api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="554">
               <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -37,9 +25,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/profiles_api/migrations/0001_initial.py">
+        <entry file="file://$PROJECT_DIR$/profiles_api/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -75,6 +68,7 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/profiles_api/models.py" />
         <option value="$PROJECT_DIR$/profiles_project/settings.py" />
+        <option value="$PROJECT_DIR$/profiles_api/admin.py" />
       </list>
     </option>
   </component>
@@ -101,12 +95,6 @@
               <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
               <item name="profiles_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="profiles-rest-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="profiles-rest-api" type="462c0819:PsiDirectoryNode" />
-              <item name="profiles_api" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561834868222</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added custom user profile model, manager and migrations">
+      <created>1562013772940</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562013772940</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -209,10 +204,10 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2007926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3606789" />
+      <window_info active="true" anchor="bottom" id="Version Control" sideWeight="0.49867898" visible="true" weight="0.3592645" />
       <window_info anchor="bottom" id="Python Console" weight="0.3281471" />
-      <window_info anchor="bottom" id="Terminal" weight="0.33097595" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.4993395" weight="0.33097595" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.501321" side_tool="true" visible="true" weight="0.3592645" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -258,7 +253,8 @@
     <MESSAGE value="created license file" />
     <MESSAGE value="changed content of license file" />
     <MESSAGE value="Created Django project and app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Django project and app" />
+    <MESSAGE value="Added custom user profile model, manager and migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom user profile model, manager and migrations" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -321,9 +317,6 @@
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles_api/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/profiles_api/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -361,9 +354,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/profiles_api/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profiles_api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="554">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -371,9 +369,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles_api/migrations/0001_initial.py">
+    <entry file="file://$PROJECT_DIR$/profiles_api/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
